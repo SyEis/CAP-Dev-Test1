@@ -9,7 +9,7 @@ annotate RiskService.Risks with {
 }
 
 annotate RiskService.Mitigations with {
-	ID @(
+	id @(
 		UI.Hidden,
 		Common: {
 		Text: description
@@ -38,7 +38,7 @@ annotate RiskService.Risks with @(
 		SelectionFields: [prio],
 		LineItem: [
 			{Value: title},
-			{Value: miti_ID},
+			{Value: miti_id},
 			{
 				Value: prio,
 				Criticality: criticality
@@ -53,7 +53,7 @@ annotate RiskService.Risks with @(
 		],
 		FieldGroup#Main: {
 			Data: [
-				{Value: miti_ID},
+				{Value: miti_id},
 				{
 					Value: prio,
 					Criticality: criticality
@@ -79,8 +79,8 @@ annotate RiskService.Risks with {
 				CollectionPath: 'Mitigations',
 				Parameters: [
 					{ $Type: 'Common.ValueListParameterInOut',
-						LocalDataProperty: miti_ID,
-						ValueListProperty: 'ID'
+						LocalDataProperty: miti_id,
+						ValueListProperty: 'id'
 					},
 					{ $Type: 'Common.ValueListParameterDisplayOnly',
 						ValueListProperty: 'description'
