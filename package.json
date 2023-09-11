@@ -7,9 +7,11 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4",
     "@sap/cds-hana": "^2",
+    "@sap/generator-fiori": "^1.10.6",
     "@sap/xssec": "^3",
+    "express": "^4",
+    "mbt": "^1.0.4",
     "passport": "^0"
   },
   "devDependencies": {
